@@ -18,15 +18,15 @@
 	text-align: center;
 }
 
-a {
+.top-menu a {
 	text-decoration: none;
 }
 
-a:link {
+.top-menu a:link {
 	color: #000;
 }
 
-a:visited {
+.top-menu a:visited {
 	color:  #000;
 }
 
@@ -38,24 +38,45 @@ a:visited {
 
 /* PJe Externos */
 .content {
-	padding: 3%;
+	padding: 5%;
 }
 
 .content img {
 	margin: auto;
-	width: 80%;
-	
+	width: 70%;	
+}
+
+/*Conteúdo do Collapse*/
+.content-text {
+	padding: 2%;
 }
 
 
-button img {
-	border: none;
+h5 {
+	margin-top: 3%;
 }
+
+.formText {
+	margin-top: 1%;
+	padding: 1%;
+	text-align: justify;
+	font-size: 80%;
+}
+
+.formText2 {
+	margin-top: 2%;
+	text-align: justify;
+	font-size: 80%;
+}
+
+
 
 
 /**/
 footer {
 	text-align: center;
 	font-size: 10px;
-	margin-top: 2%;
+	margin-bottom: 2%;
+
+
 }

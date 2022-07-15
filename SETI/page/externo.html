@@ -50,53 +50,318 @@
 
 
 		<div class="content">
-			<div class="accordion">
+			<div id="accordion">
+
 				<div class="card">
 					<div class="card-header">
 						<a class="btn" data-bs-toggle="collapse" href="#collapseOne">
-							Cadastro Pessoa Física
+							Orientações PJe-Office
 						</a>
 					</div>
-
-					<div id="collapseOne" class="collapse" data-bs-parent="#accordion">
-						<div class="card-body bg-light" id="content-size">
-
-							<div id="demo" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+					<div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+						<div class="card-body">
+							
+							<div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
 								<div class="carousel-inner">
-									<div class="carousel-item active">
-										<img src="../image/tutorial/pf-cadastro.png" class="d-block w-30">
+									<div class="carousel-item active" data-bs-interval="30000">
+										<img src="../image/tutorial/pf-info.png" class="d-block">
 									</div>
-									<div class="carousel-item">
-										<img src="../image/tutorial/pf-info.png" class="d-block w-30">
+									<div class="carousel-item" data-bs-interval="30000">
+										<img src="../image/tutorial/pf-cadastro.png" class="d-block">
 									</div>
-									<div class="carousel-item">
-										<img src="../image/tutorial/pf-cadastro.png" class="d-block w-30">
+									<div class="carousel-item" data-bs-interval="30000">
+										<img src="..." class="d-block">
 									</div>
 								</div>
-								<!-- Left and right controls/icons -->
-								<button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-									<span class="carousel-control-prev-icon"></span>
+								<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
 								</button>
-								<button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-									<span class="carousel-control-next-icon"></span>
+								<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
 								</button>
 							</div>
-
+							<!-- Texto Informação-->
+							<div class="content-text">
+								<h5>Sugestão de Resposta:</h5>
+								<div class="formText">
+									<p>
+										Boa tarde,
+									</p>
+									Orientamos primeiramente, a desinstalar a versão do PJe-Office que está atualmente em seu computador, sendo este imprescindível para acessar posteriormente e após acesse o link https://www.pje.jus.br/wiki/index.php/PJeOffice, faça o download da versão atual do PJeOffice disponível para seu Sistema Operacional, instale o aplicativo sem criar um ícone na área de trabalho e siga os passos abaixo para realizar a configuração de seu Certificado Digital junto ao PJeOffice.
+									<p>
+										Em anexo estamos enviando tutorias para atualizar a versão do PJeOffice, entrar com a senha de seu Certificado quando exibir "Chave inválida" ou "Parâmetros Incorretos" e verificar as configurações do Certificado Digital, caso tenha sido renovado.
+									</p><p>
+										Após instalação, procure o software PJeOffice no Menu Iniciar e dê um duplo clique sobre ele, deve aparecer a mensagem “já existe uma instância do PJe-Office em execução", este procedimento fará com que o ícone na barra de tarefas apareça e você consiga continuar com os procedimentos para adicionar o Certificado Digital, não necessitando fechar a caixa de diálogo para continuar.
+									</p><p>
+										Permanecemos à inteira disposição.
+									</p>
+								</div>
+								<h6>Complementos de Respostas:</h6>
+								<div class="formText2">
+									<ol>
+										<li>Caso o problema persista, nos forneça mais informações (print do erro apresentado) e número do processo, se houver, para que possamos auxiliar melhor e dar prosseguimento no atendimento.</li>
+										<li>Após, orientamos a seguir o caminho, Painel > Acesso Rápido > Assinar Documentos Pendentes. Lá você irá encontrar quais documentos ainda necessitam de assinatura.</li>
+										<li>Informamos que o Callcenter TRF 3ª presta auxílio técnico exclusivamente por meio deste canal eletrônico, não possuindo a opção via atendimento telefônico.</li>
+										<li>Informamos que o cadastro de advogado é um processo que deve ser feito pelo próprio advogado. Basta acessar https://pje1g.trf3.jus.br/pje/login.seam, clicar em "Formas de Acesso", em seguida acompanhar os passos para cadastro com Certificado Digital, devendo ser do TIPO A3 e assim assinar o Termo de Compromisso.</li>
+										<li>Lembramos que, as plataformas de acompanhamento e peticionamento online dos Tribunais atuam de forma independente, porquanto, o acesso a um deles não garante o acesso aos demais, sendo necessário verificar os requisitos de acesso para cada um.</li>
+										<li>Pedimos que verifique no PJe-Office, nos ícones ocultos na parte inferior direita de sua tela. Ao encontrar, clique com o botão direito e vá para "Servidores Autorizados", na lista deverá ter o link do https://pje1g.trf3.jus.br/ e https://pje2g.trf3.jus.br/, verifique se a opção "SIM" está marcada, caso não esteja, realize esta mudança e tente novamente o acesso ao sistema.</li>
+									</ol>
+								</div>
+								<h6>CONJUNTO DE CHAVES NÃO EXISTE</h6>
+								<a href="#">Download PDF</a>
+								<h6>CKR_DEVICE_ERROR</h6>
+								<a href="#">Download PDF</a>
+								<h6>UNSUPPORTED KEY TYPE NULL</h6>
+								<h6>FETCH TO SOURCE</h6>
+							</div>
 						</div>
-
-
 					</div>
 				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+							Alteração de Cadastro Pessoa Física
+						</a>
+					</div>
+					<div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum..
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+							Cadastro Perito
+						</a>
+					</div>
+					<div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum..
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+							Cadastro de Partes e Peticionamentos (Advogado)
+						</a>
+					</div>
+					<div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum..
+						</div>
+					</div>
+				</div>
+
+
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
+							Advogado apresenta erro ao se cadastrar
+
+						</a>
+					</div>
+					<div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum..
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSix">
+							Gerar notificação Automática PF-MPF [IPL] Tramitação PF - Integração
+						</a>
+					</div>
+					<div id="collapseSix" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum..
+						</div>
+					</div>
+				</div>
+
+
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSeven">
+							Remeter processo para Tramitação Direta [IPL] Tramitação PF - Integração
+						</a>
+					</div>
+					<div id="collapseSeven" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum..
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEight">
+							Remeter auto para justiça (pedido PF-MPF) - [IPL] Avaliar Solicitações
+
+						</a>
+					</div>
+					<div id="collapseEight" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum..
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseNine">
+							Advogado não consegue visualizar despacho
+						</a>
+					</div>
+					<div id="collapseNine" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum..
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTen">
+							Informação para tomar ciência antecipada de expedientes
+						</a>
+					</div>
+					<div id="collapseTen" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum..
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEleven">
+							Processo de Habilitação nos autos em Segredo de Justiça
+						</a>
+					</div>
+					<div id="collapseEleven" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum..
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwelve">
+							Procedimento para distribuição de Mandado de Segurança
+						</a>
+					</div>
+					<div id="collapseTwelve" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum..
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThirteen">
+							Procedimento para peticionar Agravo de Instrumento
+						</a>
+					</div>
+					<div id="collapseThirteen" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum..
+						</div>
+					</div>
+				</div>
+
+
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFourteen">
+							Solicitação de cadastro para Servidores INSS (Não possuem perfil de Servidor)
+						</a>
+					</div>
+					<div id="collapseFourteen" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum..
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFifteen">
+							Solicitação de visualização de processos em Segredo de Justiça
+
+						</a>
+					</div>
+					<div id="collapseFifteen" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum..
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSixteen">
+							Solicitação do INSS para apagar tarefas e remeter ao 2º Grau
+						</a>
+					</div>
+					<div id="collapseSixteen" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum..
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSeventeen">
+							Processos no 1º ou 2º Grau Bloqueados
+						</a>
+					</div>
+					<div id="collapseSeventeen" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum..
+						</div>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEighteen">
+							Advogado não encontra Classe Judicial ao cadastrar novo Processo
+						</a>
+					</div>
+					<div id="collapseEighteen" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							Lorem ipsum..
+						</div>
+					</div>
+				</div>
+
+
+
+
+
 			</div>
+			<!-- The button used to copy the text 
 			<label>Sugestão de Resposta:</label>
 
-			<!-- The button used to copy the text -->
+			
 
 			<textarea class="form-control" rows="5" id="copy-resposta">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas pariatur quo doloremque inventore. Tenetur, voluptatibus cupiditate ex sequi debitis commodi error eius eum placeat neque ipsum maxime! Vero, aut, alias.</textarea>	
 
 			
 
-			<button id="copy-content" class="btn bg-secondary">COPY</button>
+			<button id="copy-content" class="btn bg-secondary">COPY</button>-->
 		</div>
 
 
@@ -104,5 +369,6 @@
 
 		<!-- Default Script-->
 		<script type="text/javascript" src="../js/script.js"></script>
+		<footer> Designed by Thiago de Camargo Amaro</footer>
 	</body>
 	</html>
