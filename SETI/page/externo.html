@@ -12,363 +12,844 @@
 </head>
 <body>
 	<!-- JavaScript Bundle with Popper -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+	</script>
+	<script type="text/javascript" src="../js/script.js"></script>
 
-	
-	<div class="top-menu">
-		<nav class="navbar navbar-expand-sm bg-light">
-			<div class="container">
-				
+	<script>
+		window.onload = function() {
+    // Pega todos os elementos correspondentes
+    var copyTextareaBtn = Array.prototype.slice.
+    call(document.querySelectorAll('.js-textareacopybtn'));
+    var copyTextarea = Array.prototype.slice.
+    call(document.querySelectorAll('.js-copytextarea'));
+
+    // Laço para percorrer todos os elementos
+    copyTextareaBtn.forEach(function(btn, idx) {
+
+    	btn.addEventListener("click", function() {
+
+        // Copia o conteudo do textarea
+        copyTextarea[idx].select();
+
+        var msg = document.execCommand('copy') 
+        ? 'funcionou' : 'deu erro';
+        console.log('Compando para copiar texto ' + msg);
+
+    });
+
+    });
+}
+</script>
+
+<!-- 
+<textarea class="js-copytextarea" rows="7" readonly>
+</textarea>
+<a class="js-textareacopybtn">
+<img src="../image/content-copy.svg" class="copyIcon">
+</a>
+-->
+
+
+<div class="top-menu">
+	<nav class="navbar navbar-expand-sm bg-light">
+		<div class="container">
+
+
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">
+						<img src="../image/home-icon.png" id="home"></a>
+					</li>
+				</ul>
+				<strong><span class="navbar-text"> Atendimento :</span></strong>
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="externo.html">PJe-EXTERNOS</a>
+					</li>
+				</ul>
 
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link" href="../index.html">
-							<img src="../image/home-icon.png" id="home"></a>
-						</li>
-					</ul>
-					<strong><span class="navbar-text"> Atendimento :</span></strong>
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link" href="externo.html">PJe-EXTERNOS</a>
-						</li>
-					</ul>
+						<a class="nav-link" href="primeiroG.html">PJe 1º Grau</a>
+					</li>
+				</ul>
 
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link" href="primeiroG.html">PJe 1º Grau</a>
-						</li>
-					</ul>
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="segundoG.html">PJe 2º Grau</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 
-					<ul class="navbar-nav">
-						<li class="nav-item">
-							<a class="nav-link" href="segundoG.html">PJe 2º Grau</a>
-						</li>
-					</ul>
+
+	<div class="content">
+		<div id="accordion">
+			<div class="card">
+				<div class="card-header">
+					<a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+						Orientações PJe-Office
+					</a>
 				</div>
-			</nav>
-		</div>
+				<div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
 
-
-		<div class="content">
-			<div id="accordion">
-
-				<div class="card">
-					<div class="card-header">
-						<a class="btn" data-bs-toggle="collapse" href="#collapseOne">
-							Orientações PJe-Office
-						</a>
-					</div>
-					<div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
-						<div class="card-body">
-							
-							<div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
-								<div class="carousel-inner">
-									<div class="carousel-item active" data-bs-interval="30000">
-										<img src="../image/tutorial/pf-info.png" class="d-block">
-									</div>
-									<div class="carousel-item" data-bs-interval="30000">
-										<img src="../image/tutorial/pf-cadastro.png" class="d-block">
-									</div>
-									<div class="carousel-item" data-bs-interval="30000">
-										<img src="..." class="d-block">
-									</div>
+						<!--<div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active" data-bs-interval="30000">
+									<img src="../image/tutorial/pf-info.png" class="d-block">
 								</div>
-								<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									<span class="visually-hidden">Previous</span>
-								</button>
-								<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-									<span class="carousel-control-next-icon" aria-hidden="true"></span>
-									<span class="visually-hidden">Next</span>
-								</button>
+								<div class="carousel-item" data-bs-interval="30000">
+									<img src="../image/tutorial/pf-cadastro.png" class="d-block">
+								</div>
+								<div class="carousel-item" data-bs-interval="30000">
+									<img src="..." class="d-block">
+								</div>
 							</div>
-							<!-- Texto Informação-->
-							<div class="content-text">
+							<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>-->
+						<!-- Texto Informação-->
+
+						<div class="formText">
+							<div class="row">
 								<h5>Sugestão de Resposta:</h5>
-								<div class="formText">
-									<p>
+							</div>
+							<div class="row">
+								<div class="col-11">
+									<textarea class="js-copytextarea" rows="15" readonly>
 										Boa tarde,
-									</p>
-									Orientamos primeiramente, a desinstalar a versão do PJe-Office que está atualmente em seu computador, sendo este imprescindível para acessar posteriormente e após acesse o link https://www.pje.jus.br/wiki/index.php/PJeOffice, faça o download da versão atual do PJeOffice disponível para seu Sistema Operacional, instale o aplicativo sem criar um ícone na área de trabalho e siga os passos abaixo para realizar a configuração de seu Certificado Digital junto ao PJeOffice.
-									<p>
+
+										Orientamos primeiramente, a desinstalar a versão do PJe-Office que está atualmente em seu computador, sendo este imprescindível para acessar posteriormente e após acesse o link https://www.pje.jus.br/wiki/index.php/PJeOffice, faça o download da versão atual do PJeOffice disponível para seu Sistema Operacional, instale o aplicativo sem criar um ícone na área de trabalho e siga os passos abaixo para realizar a configuração de seu Certificado Digital junto ao PJeOffice.
+
 										Em anexo estamos enviando tutorias para atualizar a versão do PJeOffice, entrar com a senha de seu Certificado quando exibir "Chave inválida" ou "Parâmetros Incorretos" e verificar as configurações do Certificado Digital, caso tenha sido renovado.
-									</p><p>
+
 										Após instalação, procure o software PJeOffice no Menu Iniciar e dê um duplo clique sobre ele, deve aparecer a mensagem “já existe uma instância do PJe-Office em execução", este procedimento fará com que o ícone na barra de tarefas apareça e você consiga continuar com os procedimentos para adicionar o Certificado Digital, não necessitando fechar a caixa de diálogo para continuar.
-									</p><p>
+
 										Permanecemos à inteira disposição.
-									</p>
+									</textarea>
 								</div>
-								<h6>Complementos de Respostas:</h6>
-								<div class="formText2">
-									<ol>
-										<li>Caso o problema persista, nos forneça mais informações (print do erro apresentado) e número do processo, se houver, para que possamos auxiliar melhor e dar prosseguimento no atendimento.</li>
-										<li>Após, orientamos a seguir o caminho, Painel > Acesso Rápido > Assinar Documentos Pendentes. Lá você irá encontrar quais documentos ainda necessitam de assinatura.</li>
-										<li>Informamos que o Callcenter TRF 3ª presta auxílio técnico exclusivamente por meio deste canal eletrônico, não possuindo a opção via atendimento telefônico.</li>
-										<li>Informamos que o cadastro de advogado é um processo que deve ser feito pelo próprio advogado. Basta acessar https://pje1g.trf3.jus.br/pje/login.seam, clicar em "Formas de Acesso", em seguida acompanhar os passos para cadastro com Certificado Digital, devendo ser do TIPO A3 e assim assinar o Termo de Compromisso.</li>
-										<li>Lembramos que, as plataformas de acompanhamento e peticionamento online dos Tribunais atuam de forma independente, porquanto, o acesso a um deles não garante o acesso aos demais, sendo necessário verificar os requisitos de acesso para cada um.</li>
-										<li>Pedimos que verifique no PJe-Office, nos ícones ocultos na parte inferior direita de sua tela. Ao encontrar, clique com o botão direito e vá para "Servidores Autorizados", na lista deverá ter o link do https://pje1g.trf3.jus.br/ e https://pje2g.trf3.jus.br/, verifique se a opção "SIM" está marcada, caso não esteja, realize esta mudança e tente novamente o acesso ao sistema.</li>
-									</ol>
+								<div class="col-1">
+									<div class="row">
+										<a class="js-textareacopybtn">
+											<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+										</a>
+										<a href="#">
+											<img src="../image/download-solid.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download PDF">
+										</a>
+									</div>
 								</div>
+							</div>
+						</div>
+
+						<div class="formText">
+							<div class="row">
+								<h5>Complementos para Resposta:</h5>
+							</div>
+							
+								<div class="row">
+									<div class="col-11">
+										<textarea class="js-copytextarea" rows="2" readonly>
+Após, orientamos a seguir o caminho, Painel > Acesso Rápido > Assinar Documentos Pendentes. Lá você irá encontrar quais documentos ainda necessitam de assinatura.
+										</textarea>
+									</div>
+									<div class="col-1">
+										<a class="js-textareacopybtn">
+											<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+										</a>										
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-11">
+										<textarea class="js-copytextarea" rows="2" readonly>
+											Informamos que o Callcenter TRF 3ª presta auxílio técnico exclusivamente por meio deste canal eletrônico, não possuindo a opção via atendimento telefônico.
+										</textarea>
+									</div>
+									<div class="col-1">
+										<a class="js-textareacopybtn">
+											<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+										</a>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-11">
+										<textarea class="js-copytextarea" rows="3" readonly>
+											Informamos que o cadastro de advogado é um processo que deve ser feito pelo próprio advogado. Basta acessar https://pje1g.trf3.jus.br/pje/login.seam, clicar em "Formas de Acesso", em seguida acompanhar os passos para cadastro com Certificado Digital, devendo ser do TIPO A3 e assim assinar o Termo de Compromisso.
+										</textarea>
+									</div>
+									<div class="col-1">
+										<a class="js-textareacopybtn">
+											<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+										</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-11">
+										<textarea class="js-copytextarea" rows="3" readonly>
+											Lembramos que, as plataformas de acompanhamento e peticionamento online dos Tribunais atuam de forma independente, porquanto, o acesso a um deles não garante o acesso aos demais, sendo necessário verificar os requisitos de acesso para cada um.
+										</textarea>
+									</div>
+									<div class="col-1">
+										<a class="js-textareacopybtn">
+											<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+										</a>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-11">
+										<textarea class="js-copytextarea" rows="3" readonly>
+											Pedimos que verifique no PJe-Office, nos ícones ocultos na parte inferior direita de sua tela. Ao encontrar, clique com o botão direito e vá para "Servidores Autorizados", na lista deverá ter o link do https://pje1g.trf3.jus.br/ e https://pje2g.trf3.jus.br/, verifique se a opção "SIM" está marcada, caso não esteja, realize esta mudança e tente novamente o acesso ao sistema.
+										</textarea>
+									</div>
+									<div class="col-1">
+										<a class="js-textareacopybtn">
+											<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+										</a>
+									</div>
+								</div>
+							
+
+							<div class="row">
 								<h6>CONJUNTO DE CHAVES NÃO EXISTE</h6>
-								<a href="#">Download PDF</a>
+							</div>
+							<div class="row">
+								<div class="col-11">
+									<textarea class="js-copytextarea" rows="9" readonly>
+										Boa tarde,
+
+										Informamos que este erro é gerado quando o aplicativo do PJe-Office não reconhece a senha de seu Certificado Digital, para resolver, basta acessar o aplicativo e configurar a senha como consta no Tutorial em anexo.
+
+										Sendo assim, daremos este chamado por encerrado.
+										Permanecemos à inteira disposição.
+									</textarea>
+								</div>
+								<div class="col-1">
+									<div class="row">
+										<a class="js-textareacopybtn">
+											<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+										</a>
+										<a href="#">
+											<img src="../image/download-solid.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download PDF">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="row">
 								<h6>CKR_DEVICE_ERROR</h6>
-								<a href="#">Download PDF</a>
+							</div>
+							<div class="row">
+								<div class="col-11">
+									<textarea class="js-copytextarea" rows="7" readonly>
+									</textarea>
+								</div>
+								<div class="col-1">
+									<div class="row">
+										<a class="js-textareacopybtn">
+											<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+										</a>
+										<a href="#">
+											<img src="../image/download-solid.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download PDF">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="row">
 								<h6>UNSUPPORTED KEY TYPE NULL</h6>
+							</div>
+							<div class="row">
+								<div class="col-11">
+									<textarea class="js-copytextarea" rows="13" readonly>
+										Boa tarde,
+
+										Solicitamos que siga os passos abaixo para sanar o problema informado:
+
+										1. Retire o token da porta USB do computador.
+										2. Acesse o painel de controle do computador.
+										3. No painel de controle, acesse as opções de Internet.
+										4. Selecione a aba “Conteúdo” e logo após “Certificados”
+										5. Clique no (s) certificado (s) e selecione remover.
+										6. Após o procedimento, realize o acesso ao sistema.
+
+										Permanecemos à inteira disposição.
+									</textarea>
+								</div>
+								<div class="col-1">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+								</div>
+							</div>
+							<div class="row">
 								<h6>FETCH TO SOURCE</h6>
 							</div>
+							<div class="row">
+								<div class="col-11"></div>
+								<div class="col-1"></div>
+							</div>
 						</div>
+
 					</div>
 				</div>
-
-				<div class="card">
-					<div class="card-header">
-						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
-							Alteração de Cadastro Pessoa Física
-						</a>
-					</div>
-					<div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
-						<div class="card-body">
-							Lorem ipsum..
-						</div>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="card-header">
-						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
-							Cadastro Perito
-						</a>
-					</div>
-					<div id="collapseThree" class="collapse" data-bs-parent="#accordion">
-						<div class="card-body">
-							Lorem ipsum..
-						</div>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="card-header">
-						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
-							Cadastro de Partes e Peticionamentos (Advogado)
-						</a>
-					</div>
-					<div id="collapseFour" class="collapse" data-bs-parent="#accordion">
-						<div class="card-body">
-							Lorem ipsum..
-						</div>
-					</div>
-				</div>
-
-
-				<div class="card">
-					<div class="card-header">
-						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
-							Advogado apresenta erro ao se cadastrar
-
-						</a>
-					</div>
-					<div id="collapseFive" class="collapse" data-bs-parent="#accordion">
-						<div class="card-body">
-							Lorem ipsum..
-						</div>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="card-header">
-						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSix">
-							Gerar notificação Automática PF-MPF [IPL] Tramitação PF - Integração
-						</a>
-					</div>
-					<div id="collapseSix" class="collapse" data-bs-parent="#accordion">
-						<div class="card-body">
-							Lorem ipsum..
-						</div>
-					</div>
-				</div>
-
-
-				<div class="card">
-					<div class="card-header">
-						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSeven">
-							Remeter processo para Tramitação Direta [IPL] Tramitação PF - Integração
-						</a>
-					</div>
-					<div id="collapseSeven" class="collapse" data-bs-parent="#accordion">
-						<div class="card-body">
-							Lorem ipsum..
-						</div>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="card-header">
-						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEight">
-							Remeter auto para justiça (pedido PF-MPF) - [IPL] Avaliar Solicitações
-
-						</a>
-					</div>
-					<div id="collapseEight" class="collapse" data-bs-parent="#accordion">
-						<div class="card-body">
-							Lorem ipsum..
-						</div>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="card-header">
-						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseNine">
-							Advogado não consegue visualizar despacho
-						</a>
-					</div>
-					<div id="collapseNine" class="collapse" data-bs-parent="#accordion">
-						<div class="card-body">
-							Lorem ipsum..
-						</div>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="card-header">
-						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTen">
-							Informação para tomar ciência antecipada de expedientes
-						</a>
-					</div>
-					<div id="collapseTen" class="collapse" data-bs-parent="#accordion">
-						<div class="card-body">
-							Lorem ipsum..
-						</div>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="card-header">
-						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEleven">
-							Processo de Habilitação nos autos em Segredo de Justiça
-						</a>
-					</div>
-					<div id="collapseEleven" class="collapse" data-bs-parent="#accordion">
-						<div class="card-body">
-							Lorem ipsum..
-						</div>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="card-header">
-						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwelve">
-							Procedimento para distribuição de Mandado de Segurança
-						</a>
-					</div>
-					<div id="collapseTwelve" class="collapse" data-bs-parent="#accordion">
-						<div class="card-body">
-							Lorem ipsum..
-						</div>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="card-header">
-						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThirteen">
-							Procedimento para peticionar Agravo de Instrumento
-						</a>
-					</div>
-					<div id="collapseThirteen" class="collapse" data-bs-parent="#accordion">
-						<div class="card-body">
-							Lorem ipsum..
-						</div>
-					</div>
-				</div>
-
-
-				<div class="card">
-					<div class="card-header">
-						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFourteen">
-							Solicitação de cadastro para Servidores INSS (Não possuem perfil de Servidor)
-						</a>
-					</div>
-					<div id="collapseFourteen" class="collapse" data-bs-parent="#accordion">
-						<div class="card-body">
-							Lorem ipsum..
-						</div>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="card-header">
-						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFifteen">
-							Solicitação de visualização de processos em Segredo de Justiça
-
-						</a>
-					</div>
-					<div id="collapseFifteen" class="collapse" data-bs-parent="#accordion">
-						<div class="card-body">
-							Lorem ipsum..
-						</div>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="card-header">
-						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSixteen">
-							Solicitação do INSS para apagar tarefas e remeter ao 2º Grau
-						</a>
-					</div>
-					<div id="collapseSixteen" class="collapse" data-bs-parent="#accordion">
-						<div class="card-body">
-							Lorem ipsum..
-						</div>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="card-header">
-						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSeventeen">
-							Processos no 1º ou 2º Grau Bloqueados
-						</a>
-					</div>
-					<div id="collapseSeventeen" class="collapse" data-bs-parent="#accordion">
-						<div class="card-body">
-							Lorem ipsum..
-						</div>
-					</div>
-				</div>
-
-				<div class="card">
-					<div class="card-header">
-						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEighteen">
-							Advogado não encontra Classe Judicial ao cadastrar novo Processo
-						</a>
-					</div>
-					<div id="collapseEighteen" class="collapse" data-bs-parent="#accordion">
-						<div class="card-body">
-							Lorem ipsum..
-						</div>
-					</div>
-				</div>
-
-
-
-
-
 			</div>
-			<!-- The button used to copy the text 
-			<label>Sugestão de Resposta:</label>
 
-			
 
-			<textarea class="form-control" rows="5" id="copy-resposta">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas pariatur quo doloremque inventore. Tenetur, voluptatibus cupiditate ex sequi debitis commodi error eius eum placeat neque ipsum maxime! Vero, aut, alias.</textarea>	
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+						Cadastro de Pessoas Físicas, Vara COMUM e SAO
+					</a>
+				</div>
+				<div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
 
-			
+						<textarea class="js-copytextarea" rows="9" readonly>
+							Boa Tarde,
 
-			<button id="copy-content" class="btn bg-secondary">COPY</button>-->
+							Informamos que, seja para processos em tramitação na Vara Comum, seja para processos em tramitação no JEF, o acesso da parte (pessoa física) que queira acompanhar seu processo se dará EXCLUSIVAMENTE pelo campo PARTES (PESSOA FÍSICA).
+
+							Assim, esta divisão não realizará mais o cadastramento de perfil para acesso da parte (perfil denominado “jus postulandi”). A partir de agora há uma integração entre os sistemas SAO (Sistema de Atermação Online) e o sistema PJe, de modo que a parte deverá, primeiramente, efetuar seu cadastro no SAO. No momento em que a parte já cadastrada ao SAO efetuar login no PJe (mesmo login e senha do SAO) é que ocorrerá a vinculação dos sistemas e será automaticamente criado o perfil “jus postulandi” no Pje. 
+
+							Segue link para cadastramento de usuário no SAO: 
+							https://web3.trf3.jus.br/peticoesjef/Atermacoes/Usuario/Incluir
+
+							Segue link para alteração de senha no SAO:
+							https://web3.trf3.jus.br/usuarios-externos/Usuario/SolicitacaoAlteracaoSenhaUsuario?idSistema=4
+
+							Segue link para acesso ao manual com orientações sobre o SAO: 
+							https://www.trf3.jus.br/documentos/ages/Arquivos/Manual_8796423_Manual_SAO_e_manifestacao_de_terceiros_em_pdf.pdf
+
+							Por fim, informamos que para a parte que ainda não efetuou seu cadastro no SAO, há a opção de clicar em SOLICITAR ACESSO, momento em que será direcionada para realizar seu cadastro. 
+							Para a parte que já tem acesso ao SAO, mas esqueceu a senha, basta clicar no campo SOLICITAR NOVA SENHA. Lembrando: a senha do PJe será a mesma senha do SAO.
+
+							Feitos estas orientações, encerramos o presente chamado. 
+							Estamos à disposição para outras necessidades.
+						</textarea>
+						<a class="js-textareacopybtn">
+							<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+						</a>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+						Alteração de Cadastro Pessoa Física
+					</a>
+				</div>
+				<div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<h6>Atualização para Advogados</h6>					
+						<textarea class="js-copytextarea" rows="9" readonly>
+							Boa tarde,
+
+							Informamos que, para realização de atualização de cadastro, é necessário que sejam enviados os dados a seguir: 
+
+							Documento de Identificação com Foto;
+							E-mail;
+
+							Permanecemos à inteira disposição.
+						</textarea>
+						<a class="js-textareacopybtn">
+							<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+						</a>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+						Cadastro Perito
+					</a>
+				</div>
+				<div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+
+						<textarea class="js-copytextarea" rows="9" readonly>
+							Boa tarde,
+
+							Informamos que, para realização de cadastro de Perito, é necessário que sejam enviados os dados a seguir: 
+
+							Documento de Identificação com Foto;
+							Comprovante de Residência atualizado;
+							Nome Completo;
+							E-mail;
+							Número do Processo de Designação;
+							Especialidade;
+							Conselho Profissional;
+							Nº de Inscrição;
+
+							Permanecemos à inteira disposição.
+						</textarea>
+						<a class="js-textareacopybtn">
+							<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
+						Cadastro de Partes e Peticionamentos (Advogado)
+					</a>
+				</div>
+				<div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<textarea class="js-copytextarea" rows="7" readonly>
+							Boa tarde,
+
+							Informamos que, o cadastro de Partes e Peticionamentos, só serão possíveis mediante acesso com Certificado Digital. O acesso com CPF permite apenas a realização de consultas processuais, portanto não será possível cadastrar parte e realizar a Recuperação dos dados na Receita Federal.
+
+							Sendo assim, daremos este chamado por encerrado.
+							Permanecemos à inteira disposição.
+						</textarea>
+						<a class="js-textareacopybtn">
+							<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+						</a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSix">
+						Advogado apresenta erro ao se cadastrar
+
+					</a>
+				</div>
+				<div id="collapseSix" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<textarea class="js-copytextarea" rows="7" readonly>
+							Boa tarde,
+
+							Informamos que o problema ocorria por falta de um perfil em seu cadastro no PJe. Atribuímos o perfil de Advogado, porquanto, resta apenas acessar com seu Certificado Digital, confirmar os dados cadastrais e assinar o Termo de Compromisso para prosseguir com peticionamentos.
+
+							Sendo assim, daremos este chamado por encerrado.
+							Permanecemos à inteira disposição.
+
+						</textarea>
+						<a class="js-textareacopybtn">
+							<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSeven">
+						Gerar notificação Automática PF-MPF [IPL] Tramitação PF - Integração
+					</a>
+				</div>
+				<div id="collapseSeven" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<textarea class="js-copytextarea" rows="7" readonly>
+							Boa tarde,
+
+							Informamos que a intimação automática para o MPF foi gerada no processo citado.
+
+							Sendo assim, daremos este chamado por encerrado.
+							Permanecemos à inteira disposição.
+
+						</textarea>
+						<a class="js-textareacopybtn">
+							<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+						</a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEight">
+						Remeter processo para Tramitação Direta [IPL] Tramitação PF - Integração
+					</a>
+				</div>
+				<div id="collapseEight" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<textarea class="js-copytextarea" rows="7" readonly>
+							Boa tarde,
+
+							Verificamos que os processos relacionados estavam no fluxo antigo IPL.
+							Observe que a tarefa em que o processo se encontrava é "Tramitação PF" e não a do novo fluxo "Tramitação PF - Integração".
+							Sendo assim, deverá movimentar os autos utilizando a saída de encaminhamento para apreciação do MPF futuramente, conforme o caso (apreciação ou relatório).
+							A partir dessa movimentação, automaticamente os autos serão migrados para o fluxo de integração, conforme os usuários forem efetuando as remessas ao MPF.
+
+							Permanecemos à inteira disposição.
+						</textarea>
+						<a class="js-textareacopybtn">
+							<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseNine">
+						Remeter auto para justiça (pedido PF-MPF) - [IPL] Avaliar Solicitações
+
+					</a>
+				</div>
+				<div id="collapseNine" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<textarea class="js-copytextarea" rows="7" readonly>
+							Boa tarde,
+
+							Informamos que remetemos o processo para apreciação da Justiça Federal e se encontra na tarefa [IPL] Avaliar Solicitações - MPF/PF.
+
+							Sendo assim, daremos este chamado por encerrado.
+							Permanecemos à inteira disposição.
+
+						</textarea>
+						<a class="js-textareacopybtn">
+							<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTen">
+						Advogado não consegue visualizar despacho
+					</a>
+				</div>
+				<div id="collapseTen" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<textarea class="js-copytextarea" rows="7" readonly>
+
+							Boa tarde,
+
+							Informamos que para visualizar o despacho ou documento na linha do tempo, nos autos ou na consulta pública, será possível apenas quando todas as partes tomarem ciência dos últimos despachos juntados. Informamos ainda que poderá visualizar, após dar ciência, pelo Painel do Representante Processual > Expedientes > Procurar o Processo > Visualizar Ato entre os ícones disponíveis ou então pelo DJEN (https://comunica.pje.jus.br).
+
+							Sendo assim, daremos este chamado por encerrado.
+							Permanecemos à inteira disposição.
+						</textarea>
+						<a class="js-textareacopybtn">
+							<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+						</a>
+						<a href="#">Imagem</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEleven">
+						Informação para tomar ciência antecipada de expedientes
+					</a>
+				</div>
+				<div id="collapseEleven" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<textarea class="js-copytextarea" rows="7" readonly>
+							Boa tarde,
+
+							O processo aparecerá para o intimado no portal, na ABA EXPEDIENTES no dia que iniciar a contagem do prazo, conforme art. 224 do CPC.
+							Desejando antecipar a ciência deverá migrar para a ABA ACERVO, abrir os autos e em expedientes (na faixa azul à direita no menu (3 barras)> expedientes.
+							Existe uma lupa (laranja) por onde se pode apor ciência. Atualizando a página o processo migrará para a ABA EXPEDIENTES e iniciará a contagem do prazo processual.
+
+							Seguem instruções: 
+							Antecipar ciência de intimação pelo Diário Eletrônico
+							https://www.trf3.jus.br/documentos/dpje/videos-tutoriais/Ciencia_de_intimacao.mp4
+							(copiar e colar o link na barra de endereçamento do Chrome)
+
+
+							Sendo assim, daremos este chamado por encerrado.
+							Permanecemos à inteira disposição.
+						</textarea>
+						<a class="js-textareacopybtn">
+							<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwelve">
+						Processo de Habilitação nos Autos
+					</a>
+				</div>
+				<div id="collapseTwelve" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<textarea class="js-copytextarea" rows="12" readonly>
+							Boa tarde,
+
+							Segue procedimento para solicitar habilitação no 1º e no 2º Graus:
+
+							Acesse o sistema conforme as recomendações
+							Na parte superior da tela, canto esquerdo, ao lado de PJe haverá um ícone "menu" (três barras paralelas)
+							Clique sobre ele
+							Clique em PROCESSO > OUTRAS AÇÕES> SOLICITAR HABILITAÇÃO
+							Insira o número do feito
+							Clique sobre pesquisar
+							Clique sobre o ícone "Solicitar habilitação nos autos" (representado por um clipe)
+							Selecione a parte que irá representar - polo ativo ou polo passivo (marcando o quadradinho em branco)
+							Clique sobre o botão "Próximo"
+							1º Passo: Escolha do Tipo de Habilitação
+							2º Passo: Confirmar dados do advogado
+							3º Passo: Selecione a parte para vincular
+							Indique (selecionando o campo correspondente) se juntará o instrumento de mandato ou se protesta pela apresentação oportuna, na forma da lei.
+							Clique sobre "Próximo"
+							Inclua o documento "procuração"
+							Salve
+
+							Sendo assim, daremos este chamado por encerrado.
+							Permanecemos à inteira disposição.
+						</textarea>
+						<button class="js-textareacopybtn">Copiar</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThirteen">
+						Procedimento para distribuição de Mandado de Segurança
+					</a>
+				</div>
+				<div id="collapseThirteen" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<textarea class="js-copytextarea" rows="7" readonly>
+						</textarea>
+						<button class="js-textareacopybtn">Copiar</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFourteen">
+						Procedimento para peticionar Agravo de Instrumento
+					</a>
+				</div>
+				<div id="collapseFourteen" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<textarea class="js-copytextarea" rows="15" readonly>
+							Boa tarde,
+
+							Para a distribuição do Mandado de Segurança, no que se refere às PARTES, devem ser seguidos os seguintes passos:
+
+							1 - Polo ativo: parte impetrante
+
+							2 - Polo passivo: parte impetrada (serão duas)
+							2.1 - Autoridade Coatora: tipo de pessoa - clicar em "Ente ou Autoridade" e pesquisar por ela (exemplo: gerente executivo do INSS de tal agência)
+							2.2 - Pessoa Jurídica a quem está vinculada a autoridade coatora: tipo de pessoa - clicar em "Jurídica", órgão público: clicar em SIM e buscar pela pessoa jurídica (exemplo: INSS).
+
+							3 - Outros Participantes - Fiscal da Lei (tipo de pessoa "Jurídica", órgão público "sim" e pesquisar por Ministério Público Federal – se o caso).
+
+							Observação:
+
+							Na inclusão do polo passivo, favor escolher a parte - Impetrado. A partir daí
+							escolher, em tipo de pessoa,  ente ou autoridade  e digite a autoridade. ex:
+							gerente executivo do INSS de tal agência.
+
+							Para maiores informações veja também:
+
+							Como cadastrar um novo processo
+							http://www.trf3.jus.br/documentos/dpje/videos-tutoriais/Video_tutorial_para_cadastrar_novo_processo.mp4
+							(copiar e colar o link na barra de endereçamento do Chrome)
+
+							Permanecemos à inteira disposição.
+						</textarea>
+						<button class="js-textareacopybtn">Copiar</button>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFifteen">
+						Solicitação de cadastro para Servidores INSS (Não possuem perfil de Servidor)
+					</a>
+				</div>
+				<div id="collapseFifteen" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<textarea class="js-copytextarea" rows="7" readonly>
+							Boa tarde,
+
+							Verificamos que não consta um cadastro no Sistema PJe ou não possui um perfil de Servidor atribuído. Entretanto, para que obtenha acesso, será necessário que solicite a outro servidor, que já possua o perfil necessário, realizar um callcenter pedindo o seu cadastro. 
+
+							Por favor, solicite a este servidor, que abrirá o callcenter, que indique o perfil requisitado para cadastro.
+
+							Sendo assim, daremos este chamado por encerrado.
+							Permanecemos à inteira disposição.
+						</textarea>
+						<button class="js-textareacopybtn">Copiar</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSixteen">
+						Solicitação de visualização de processos em Segredo de Justiça
+
+					</a>
+				</div>
+				<div id="collapseSixteen" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<textarea class="js-copytextarea" rows="7" readonly>
+							Boa tarde,
+
+							Informamos que a solicitação de habilitação nos autos, nos processos em Segredo de Justiça, deve ser feita diretamente na secretaria processante do feito, com autorização judicial, tal medida não compete ao DPJe.
+
+							Isto posto, orientamos que entre em contato com o juízo processante (seja comunicando por telefone, e-mail ou peticionando nos autos) informando esta situação e solicitando a liberação de visualização dos referidos documentos sigilosos (poderá mencionar a resposta enviada a este chamado).
+
+							Sendo assim, daremos este chamado por encerrado.
+							Permanecemos à inteira disposição.
+						</textarea>
+						<button class="js-textareacopybtn">Copiar</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSeventeen">
+						Solicitação do INSS para apagar tarefas e remeter ao 2º Grau
+					</a>
+				</div>
+				<div id="collapseSeventeen" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<textarea class="js-copytextarea" rows="7" readonly>
+
+							Por gentiliza, excluir nós do Processo: __________________ e retornar para AGES > PJe-externos.
+
+							[INSS] Preparar informação (Setor administrativo do INSS_São Paulo/Juiz Federal Titular)
+							(VERIFICAR)[JEF-PROC] Remetidos para o INSS para cumprimento de decisão (1ª Vara Gabinete JEF de Osasco/Juiz Federal Titular)
+							(VERIFICAR)Remetidos para o INSS para cumprimento de decisão (1ª Vara Previdenciária Federal de São Paulo/Juiz Federal Substituto)
+
+							​Atenciosamente.
+						</textarea>
+						<button class="js-textareacopybtn">Copiar</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEighteen">
+						Processos no 1º ou 2º Grau Bloqueados
+					</a>
+				</div>
+				<div id="collapseEighteen" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<textarea class="js-copytextarea" rows="7" readonly>
+							Boa tarde,
+
+							Tendo em vista que o feito está tramitando na Turma Recursal atualmente, peticionamentos no 1º Grau ficam bloqueados até a apreciação do Recurso.
+							Orientamos que acesse o sistema PJe 2º Grau, para assim efetuar o peticionamento e cumprir o prazo para manifestação.
+
+							Sendo assim, daremos este chamado por encerrado.
+							Permanecemos à inteira disposição.
+						</textarea>
+						<button class="js-textareacopybtn">Copiar</button>
+						<textarea class="js-copytextarea" rows="7" readonly>
+							Boa tarde,
+
+							Tendo em vista que o feito está tramitando no 1º Grau atualmente, peticionamentos no 2º Grau ficam bloqueados.
+							Orientamos que acesse o sistema PJe 1º Grau, para assim efetuar o peticionamento e cumprir o prazo para manifestação.
+
+							Sendo assim, daremos este chamado por encerrado.
+							Permanecemos à inteira disposição.
+						</textarea>
+						<button class="js-textareacopybtn">Copiar</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseNineteen">
+						Advogado não encontra Classe Judicial ao cadastrar novo Processo
+					</a>
+				</div>
+				<div id="collapseNineteen" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<textarea class="js-copytextarea" rows="7" readonly>
+							Boa tarde,
+
+							Informamos, que a classe judicial e o assunto devem ser definidos de acordo com o Sistema de Gestão de Tabelas Processuais Unificadas - CNJ.
+
+							Para maiores informações veja também:
+
+							Como cadastrar um novo processo
+							[1]http://www.trf3.jus.br/documentos/dpje/videos-tutoriais/Video_tutorial_para_cadastrar_novo_processo.mp4
+							(copiar e colar o link na barra de endereçamento do Chrome)
+
+							Desta forma, encerraremos este chamado por fugir ao escopo deste órgão.
+							Permanecemos à inteira disposição.
+						</textarea>
+						<button class="js-textareacopybtn">Copiar</button>
+					</div>
+				</div>
+			</div>
+
+
+
+
 		</div>
+	</div>
 
 
-		
 
-		<!-- Default Script-->
-		<script type="text/javascript" src="../js/script.js"></script>
-		<footer> Designed by Thiago de Camargo Amaro</footer>
-	</body>
-	</html>
+
+	<!-- Default Script-->
+	<script type="text/javascript" src="../js/script.js"></script>
+	<footer> Designed by Thiago de Camargo Amaro</footer>
+
+
+
+
+	<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+  	apiKey: "AIzaSyB31aQS8j5bIbhX3mHn6qqt9pu8tI3on00",
+  	authDomain: "dpje-af197.firebaseapp.com",
+  	projectId: "dpje-af197",
+  	storageBucket: "dpje-af197.appspot.com",
+  	messagingSenderId: "449987035210",
+  	appId: "1:449987035210:web:bcc91726e2a6b692bd66b3",
+  	measurementId: "G-LC9NBJ45ZY"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  	return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+
+</script>
+</body>
+</html>
