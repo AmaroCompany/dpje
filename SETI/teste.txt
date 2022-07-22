@@ -56,3 +56,57 @@ Boa tarde,
 Informamos que este erro está relacionado com sua conexão de internet e é gerado quando o navegador utilizado não permite a conexão para acesso do PJe, será necessário verifique as configurações de conexão do navegador, do Firewall do Windows e do Antivírus utilizado. O PJeOffice utiliza a porta 8800 para receber dados do PJe (web), portanto deverá verificar se esta porta está tendo o acesso bloqueado por alguma das opções mencionadas.
 
 Permanecemos à inteira disposição.
+
+
+Boa tarde,
+
+Para a distribuição do Mandado de Segurança, no que se refere às PARTES, devem ser seguidos os seguintes passos:
+
+1 - Polo ativo: parte impetrante;
+
+2 - Polo passivo: parte impetrada (serão duas):
+	2.1 - Autoridade Coatora: tipo de pessoa - clicar em "Ente ou Autoridade" e pesquisar por ela (exemplo: gerente executivo do INSS de tal agência);
+	2.2 - Pessoa Jurídica a quem está vinculada a autoridade coatora: tipo de pessoa - clicar em "Jurídica", órgão público: clicar em SIM e buscar pela pessoa jurídica (exemplo: INSS);
+
+3 - Outros Participantes - Fiscal da Lei (tipo de pessoa "Jurídica", órgão público "sim" e pesquisar por Ministério Público Federal – se o caso);
+
+Observação:
+
+Na inclusão do polo passivo, favor escolher a parte - Impetrado. A partir daí escolher, em tipo de pessoa,  ente ou autoridade  e digite a autoridade. ex: gerente executivo do INSS de tal agência.
+
+Para maiores informações veja também:
+
+Como cadastrar um novo processo
+http://www.trf3.jus.br/documentos/dpje/videos-tutoriais/Video_tutorial_para_cadastrar_novo_processo.mp4
+(copiar e colar o link na barra de endereçamento do Chrome)
+
+Permanecemos à inteira disposição.
+
+
+
+
+
+
+
+<!--<div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active" data-bs-interval="30000">
+									<img src="../image/tutorial/pf-info.png" class="d-block">
+								</div>
+								<div class="carousel-item" data-bs-interval="30000">
+									<img src="../image/tutorial/pf-cadastro.png" class="d-block">
+								</div>
+								<div class="carousel-item" data-bs-interval="30000">
+									<img src="..." class="d-block">
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>-->
+						<!-- Texto Informação-->

@@ -1,8 +1,12 @@
 /*INDEX*/
+.container-fluid{
+
+}
+
 .container-fluid img{
 	margin: auto;
-	width: 35%;
-	height: 65%;
+	width: 30%;
+	height: 60%;
 	padding: 3%;
 	display: flex;
 	flex-direction: row;
@@ -14,7 +18,7 @@
 }
 
 .container-fluid h5 {
-	margin-top: 10%;
+	margin-top: 5%;
 	text-align: center;
 }
 
@@ -49,23 +53,23 @@
 /* PJe Externos */
 .content {
 	padding: 5%;
+	height: 100%;
 }
 
-.content img {
-	margin: auto;
-	width: 70%;	
-}
+
 
 /*Conteúdo do Collapse*/
 
 h5 {
 	float: left;
 	padding: 1%;
+	margin-left: 1%;
 }
 
 h6 {
 	float: left;
 	padding: 1%;
+	margin-left: 2%;
 }
 
 
@@ -78,6 +82,7 @@ textarea {
 	float: left;	
 	overflow: auto;
 	resize: none;
+	outline: none;
 }
 
 
@@ -93,8 +98,7 @@ a .copyIcon {
 
 
 
-.formText {
-	margin-top: 1%;
+.card-body {
 	padding: 1%;
 	text-align: justify;
 	font-size: 80%;
@@ -104,20 +108,9 @@ a .copyIcon {
 
 
 
-
-
-a .formText2 {
-	margin-top: 2%;
-	text-align: justify;
-	font-size: 80%;
-}
-
-
 /**/
 footer {
 	text-align: center;
 	font-size: 10px;
-	margin-bottom: 2%;
-
-
+	margin: 2%;
 }
