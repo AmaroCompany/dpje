@@ -57,17 +57,18 @@
 	<nav class="navbar navbar-expand-sm bg-light">
 		<div class="container">
 
-
 			<ul class="navbar-nav">
 				<li class="nav-item">
 					<a class="nav-link" href="../index.html">
 						<img src="../image/home-icon.png" id="home"></a>
 					</li>
 				</ul>
+
 				<strong><span class="navbar-text"> Atendimento :</span></strong>
+
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						<a class="nav-link" href="externo.html">PJe-EXTERNOS</a>
+						<a class="nav-link" href="externo.html">EXTERNOS</a>
 					</li>
 				</ul>
 
@@ -86,6 +87,11 @@
 		</nav>
 	</div>
 
+<div class="form-floating mb mt"> 
+  <input class="form-control" id="searchbar" onkeyup="search_card()" type="text"
+        name="search" placeholder="Procurar..">
+        <label for="comment">Procurar..</label>
+</div>
 
 	<div class="content">
 		<div id="accordion">
@@ -500,12 +506,39 @@ Permanecemos à inteira disposição.
 								</textarea>
 							</div>
 							<div class="col-1">
-
 								<a class="js-textareacopybtn">
 									<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
 								</a>
 							</div>
 						</div>
+<hr>
+						<div class="row">
+							<h5>Sugestão de Resposta:</h5>					
+						</div>
+						<div class="row">
+							<div class="col-11" data-bs-toggle="tooltip" data-bs-placement="top" title="Resposta após altereções">
+								<textarea class="js-copytextarea" rows="10" readonly>
+Boa tarde,
+
+Informamos que realizamos o cadastro de seu perfil como Perito. Orientamos a tentar realizar acesso ao processo, caso não seja possível, será necessário entrar em contato com a Vara Processante e solicitar sua Habilitação nos Autos do processo.
+
+
+Sendo assim, daremos este chamado por encerrado.
+Permanecemos à inteira disposição.
+								</textarea>
+							</div>
+							<div class="col-1">
+								<div class="row">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+									<a href="../library/pdf/4Cadastro CPF-SENHA.pdf" target="_blank">
+										<img src="../image/download-solid.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download PDF">
+									</a>
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -1246,17 +1279,14 @@ Permanecemos à inteira disposição.
 
 
 			</div>
-		</div>
+	</div>
 
 
 
 
 		<!-- Default Script-->
 		<script type="text/javascript" src="../js/script.js"></script>
-		<footer> Designed by Thiago de Camargo Amaro</footer>
-
-
-
+		<footer class="footerOne"> Designed by Thiago de Camargo Amaro</footer>
 
 	</body>
 	</html>
