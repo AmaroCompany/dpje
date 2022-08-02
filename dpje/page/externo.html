@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Manual Suporte SETI</title>
+	<link rel="icon" type="imagem/png" href="../image/technical-support16.png
+	"/>
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+	<!-- Default CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+	</script>
+	<script type="text/javascript" src="../js/script.js"></script>
+
+	<script>
+		window.onload = function() {
+    // Pega todos os elementos correspondentes
+    var copyTextareaBtn = Array.prototype.slice.
+    call(document.querySelectorAll('.js-textareacopybtn'));
+    var copyTextarea = Array.prototype.slice.
+    call(document.querySelectorAll('.js-copytextarea'));
+
+    // Laço para percorrer todos os elementos
+    copyTextareaBtn.forEach(function(btn, idx) {
+
+    	btn.addEventListener("click", function() {
+
+        // Copia o conteudo do textarea
+        copyTextarea[idx].select();
+
+        var msg = document.execCommand('copy') 
+        ? 'funcionou' : 'deu erro';
+        console.log('Compando para copiar texto ' + msg);
+
+    });
+
+    });
+}
+</script>
+
+<!-- 
+<textarea class="js-copytextarea" rows="7" readonly>
+</textarea>
+<a class="js-textareacopybtn">
+<img src="../image/content-copy.svg" class="copyIcon">
+</a>
+-->
+
+
+<div class="top-menu">
+	<nav class="navbar navbar-expand-sm bg-light">
+		<div class="container">
+
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">
+						<img src="../image/home-icon.png" id="home"></a>
+					</li>
+				</ul>
+
+				<strong><span class="navbar-text"> Atendimento :</span></strong>
+
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="externo.html">EXTERNOS</a>
+					</li>
+				</ul>
+
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="primeiroG.html">PJe 1º Grau</a>
+					</li>
+				</ul>
+
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="segundoG.html">PJe 2º Grau</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+
+<div class="search">
+<div class="form-floating">
+  <input class="form-control" id="searchbar" onkeyup="search_card()" type="text" name="search" placeholder="Procurar.."/>
+  <label for="search" id="search">Procurar..</label>  
+</div>
+</div>
+
+
+	<div class="content">
+		<div id="accordion">
+			<!-- Orientações PJe -->
+			<div class="card">
+				<div class="card-header">
+					<a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+						Orientações PJe-Office
+					</a>
+				</div>
+				<div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						
+						<div class="row">
+							<h5>Sugestão de Resposta:</h5>
+						</div>
+						<div class="row">
+							<div class="col-11">
+								<textarea class="js-copytextarea" rows="17" readonly>
+Boa tarde,
+
+Orientamos primeiramente, a desinstalar a versão do PJe-Office que está atualmente em seu computador, sendo este imprescindível para acessar posteriormente e após acesse o link https://www.pje.jus.br/wiki/index.php/PJeOffice, faça o download da versão atual do PJeOffice disponível para seu Sistema Operacional, instale o aplicativo sem criar um ícone na área de trabalho e siga os passos abaixo para realizar a configuração de seu Certificado Digital junto ao PJeOffice.
+
+Em anexo estamos enviando tutorias para atualizar a versão do PJeOffice, entrar com a senha de seu Certificado quando exibir "Chave inválida" ou "Parâmetros Incorretos" e verificar as configurações do Certificado Digital, caso tenha sido renovado.
+
+Após instalação, procure o software PJeOffice no Menu Iniciar e dê um duplo clique sobre ele, deve aparecer a mensagem “já existe uma instância do PJe-Office em execução", este procedimento fará com que o ícone na barra de tarefas apareça e você consiga continuar com os procedimentos para adicionar o Certificado Digital, não necessitando fechar a caixa de diálogo para continuar.
+
+Caso o problema persista, nos forneça mais informações (print do erro apresentado) e número do processo, se houver, através deste mesmo chamado para que possamos auxiliar melhor e dar prosseguimento no atendimento.
+
+Permanecemos à inteira disposição.
+								</textarea>
+							</div>
+							<div class="col-1">
+								<div class="row">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+									<a href="../library/pdf/1Orientações para atualizar o sistema PJe.pdf" target="_blank">
+										<img src="../image/download-solid.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download PDF Padrão">
+									</a>
+
+									<a href="../library/pdf/8CertificadoA1.pdf" target="_blank">
+										<img src="../image/download-solid.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download PDF Certificado A1">
+									</a>
+								</div>
+							</div>
+						</div>
+						<hr>
+
+						
+						<div class="row">
+							<h5>Complementos para Resposta:</h5>
+						</div>
+
+						<div class="row">
+							<div class="col-11">
+								<textarea class="js-copytextarea" rows="2" readonly>
+Após, orientamos a seguir o caminho, Painel → Acesso Rápido → Assinar Documentos Pendentes. Lá você irá encontrar quais documentos ainda necessitam de assinatura.
+								</textarea>
+							</div>
+							<div class="col-1">
+								<a class="js-textareacopybtn">
+									<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+								</a>										
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="col-11">
+								<textarea class="js-copytextarea" rows="2" readonly>
+Informamos que o Callcenter TRF 3ª presta auxílio técnico exclusivamente por meio deste canal eletrônico, não possuindo a opção via atendimento telefônico.
+								</textarea>
+							</div>
+							<div class="col-1">
+								<a class="js-textareacopybtn">
+									<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+								</a>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="col-11">
+								<textarea class="js-copytextarea" rows="3" readonly>
+Informamos que o cadastro de advogado é um processo que deve ser feito pelo próprio advogado. Basta acessar https://pje1g.trf3.jus.br/pje/login.seam, clicar em "Formas de Acesso", em seguida acompanhar os passos para cadastro com Certificado Digital, devendo ser do TIPO A3 e assim assinar o Termo de Compromisso.
+								</textarea>
+							</div>
+							<div class="col-1">
+								<a class="js-textareacopybtn">
+									<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+								</a>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="col-11">
+								<textarea class="js-copytextarea" rows="3" readonly>
+Lembramos que, as plataformas de acompanhamento e peticionamento online dos Tribunais atuam de forma independente, porquanto, o acesso a um deles não garante o acesso aos demais, sendo necessário verificar os requisitos de acesso para cada um.
+								</textarea>
+							</div>
+							<div class="col-1">
+								<a class="js-textareacopybtn">
+									<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+								</a>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="col-11">
+								<textarea class="js-copytextarea" rows="3" readonly>
+Pedimos que verifique no PJe-Office, nos ícones ocultos na parte inferior direita de sua tela. Ao encontrar, clique com o botão direito e vá para "Servidores Autorizados", na lista deverá ter o link do https://pje1g.trf3.jus.br/ e https://pje2g.trf3.jus.br/, verifique se a opção "SIM" está marcada, caso não esteja, realize esta mudança e tente novamente o acesso ao sistema.
+								</textarea>
+							</div>
+							<div class="col-1">
+								<a class="js-textareacopybtn">
+									<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+								</a>
+							</div>
+						</div>
+						<hr>
+
+						<div class="row">
+							<h6>CONJUNTO DE CHAVES NÃO EXISTE</h6>
+						</div>
+						<div class="row">
+							<div class="col-11">
+								<textarea class="js-copytextarea" rows="6" readonly>
+Boa tarde,
+
+Informamos que este erro é gerado quando o aplicativo do PJe-Office não reconhece a senha de seu Certificado Digital, para resolver, basta acessar o aplicativo e configurar a senha como consta no Tutorial em anexo.
+
+Permanecemos à inteira disposição.
+								</textarea>
+							</div>
+							<div class="col-1">
+								<div class="row">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+									<a href="../library/pdf/2ConfiguraçãoSenhaCertificado.pdf" target="_blank">
+										<img src="../image/download-solid.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download PDF">
+									</a>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<h6>CKR_DEVICE_ERROR</h6>
+						</div>
+						<div class="row">
+							<div class="col-11">
+								<textarea class="js-copytextarea" rows="6" readonly>
+Boa tarde,
+
+Segue em anexo, procedimento para resolução do ERRO informado.
+
+Permanecemos à inteira disposição. 								
+								</textarea>
+							</div>
+							<div class="col-1">
+								<div class="row">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+									<a href="../library/pdf/6Orientações Token.pdf" target="_blank">
+										<img src="../image/download-solid.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download PDF">
+									</a>
+								</div>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<h6>UNSUPPORTED KEY TYPE NULL</h6>
+						</div>
+						<div class="row">
+							<div class="col-11">
+								<textarea class="js-copytextarea" rows="13" readonly>
+Boa tarde,
+
+Solicitamos que siga os passos abaixo para sanar o problema informado:
+
+1. Retire o token da porta USB do computador.
+2. Acesse o painel de controle do computador.
+3. No painel de controle, acesse as opções de Internet.
+4. Selecione a aba “Conteúdo” e logo após “Certificados”
+5. Clique no (s) certificado (s) e selecione remover.
+6. Após o procedimento, realize o acesso ao sistema.
+
+Permanecemos à inteira disposição.
+								</textarea>
+							</div>
+							<div class="col-1">
+								<a class="js-textareacopybtn">
+									<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+								</a>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<h6>FETCH TO SOURCE</h6>
+						</div>
+						<div class="row">
+							<div class="col-11">
+								<textarea class="js-copytextarea" rows="8" readonly>
+Boa tarde,
+
+Informamos que este erro está relacionado com sua conexão de internet e é gerado quando o navegador utilizado não permite a conexão para acesso do PJe, será necessário verifique as configurações de conexão do navegador, do Firewall do Windows e do Antivírus utilizado. O PJeOffice utiliza a porta 8800 para receber dados do PJe (web), portanto deverá verificar se esta porta está tendo o acesso bloqueado por alguma das opções mencionadas.
+
+Permanecemos à inteira disposição. 
+								</textarea>
+							</div>
+
+							<div class="col-1">
+								<a class="js-textareacopybtn">
+									<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+								</a>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<h6>Apple MAC OS</h6>
+						</div>
+						<div class="row">
+							<div class="col-11">
+								<textarea class="js-copytextarea" rows="21" readonly>
+Boa tarde,
+
+Solicitamos que verifique se instalou o PJeOffice específico para o sistema IOS.
+ 
+Caso não tenha o PJeOffice instalado ou a versão for abaixo da 1.0.27, acesse o site: www.trf3.jus.br > PJe > Informações de acesso ao PJe - público externo > Tutorial para instalação do PJeOffice e o instale de acordo com o sistema operacional que você utiliza.
+Como instalar e configurar o PJeOffice:
+http://www.trf3.jus.br/documentos/dpje/videos-tutoriais/Tutorial_para_instalar_e_configurar_o_PJe_Office.mp4
+(copiar e colar o link na barra de endereçamento do Chrome)
+
+Se a versão do MAC for macOS Mojave - 10.14.4 e macOS Mojave - 10.14.5, deve-se utilizar a seguinte versão do driver de certificado:
+https://installer.id.ee/media/etoken/mac_10.2.82.0.zip
+ 
+A versão do SafeNet: SafeNet Authentication Client (10.2.82.0).
+ 
+Caso não seja a versão operacional acima informada, deve-se buscar nos sites das certificadoras a versão de driver compatível.
+ 
+Antes de acessar o sistema PJe, pedimos que verifique as configurações do certificado digital conforme anexo, um tutorial para PJeOffice no MAC.
+
+Permanecemos à inteira disposição. 
+								</textarea>
+							</div>
+
+							<div class="col-1">
+								<div class="row">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+									<a href="../library/pdf/7Mac-Configuração PJeOffice e Certificado.pdf" target="_blank">
+										<img src="../image/download-solid.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download PDF">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					
+				</div>
+			</div>
+
+			<!-- Cadastro Jus Postulandi -->
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+						Cadastro de Pessoas Físicas, Vara COMUM e SAO
+					</a>
+				</div>
+				<div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<div class="row">
+							<h5>Sugestão de Resposta:</h5>
+						</div>
+						<div class="row">
+							<div class="col-11">
+								<textarea class="js-copytextarea" rows="28" readonly>
+Boa Tarde,
+
+Informamos que, seja para processos em tramitação na Vara Comum, seja para processos em tramitação no JEF, o acesso da parte (pessoa física) que queira acompanhar seu processo se dará EXCLUSIVAMENTE pelo campo PARTES (PESSOA FÍSICA).
+
+Assim, esta divisão não realizará mais o cadastramento de perfil para acesso da parte (perfil denominado “jus postulandi”). A partir de agora há uma integração entre os sistemas SAO (Sistema de Atermação Online) e o sistema PJe, de modo que a parte deverá, primeiramente, efetuar seu cadastro no SAO. No momento em que a parte já cadastrada ao SAO efetuar login no PJe (mesmo login e senha do SAO) é que ocorrerá a vinculação dos sistemas e será automaticamente criado o perfil “jus postulandi” no Pje. 
+
+Segue link para cadastramento de usuário no SAO: 
+https://web3.trf3.jus.br/peticoesjef/Atermacoes/Usuario/Incluir
+
+Segue link para alteração de senha no SAO:
+https://web3.trf3.jus.br/usuarios-externos/Usuario/SolicitacaoAlteracaoSenhaUsuario?idSistema=4
+
+Segue link para acesso ao manual com orientações sobre o SAO: 
+https://www.trf3.jus.br/documentos/ages/Arquivos/Manual_8796423_Manual_SAO_e_manifestacao_de_terceiros_em_pdf.pdf
+
+Por fim, informamos que para a parte que ainda não efetuou seu cadastro no SAO, há a opção de clicar em SOLICITAR ACESSO, momento em que será direcionada para realizar seu cadastro. 
+Para a parte que já tem acesso ao SAO, mas esqueceu a senha, basta clicar no campo SOLICITAR NOVA SENHA. Lembrando: a senha do PJe será a mesma senha do SAO.
+
+Link de Acesso ao PJe:
+1º Grau: https://pje1g-jus.trf3.jus.br/pje/login.seam
+2º Grau: https://pje2g-jus.trf3.jus.br/pje/login.seam
+
+Feitos estas orientações, encerramos o presente chamado. 
+Estamos à disposição para outras necessidades.
+								</textarea>
+							</div>
+							<div class="col-1">
+								<div class="row">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+									<a href="../library/pdf/3Manual acesso parte - pessoa física.pdf" target="_blank">
+										<img src="../image/download-solid.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download PDF">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Atualização cadastro PF -->
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+						Alteração de Cadastro Pessoa Física
+					</a>
+				</div>
+				<div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<div class="row">
+							<h5>Sugestão de Resposta:</h5>					
+						</div>
+						<div class="row">
+							<div class="col-11" data-bs-toggle="tooltip" data-bs-placement="top" title="Para ADVOGADOS">
+								<textarea class="js-copytextarea" rows="9" readonly>
+Boa tarde,
+
+Informamos que, para realização de atualização de cadastro, é necessário que sejam enviados os dados a seguir: 
+
+Documento de Identificação com Foto;
+E-mail;
+
+Permanecemos à inteira disposição.
+								</textarea>
+							</div>
+							<div class="col-1">
+								<a class="js-textareacopybtn">
+									<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+								</a>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<h5>Sugestão de Resposta:</h5>					
+						</div>
+						<div class="row">
+							<div class="col-11" data-bs-toggle="tooltip" data-bs-placement="top" title="Resposta após altereções">
+								<textarea class="js-copytextarea" rows="8" readonly>
+Boa tarde,
+
+Informamos que atualizamos o e-mail em seu cadastro no Sistema PJe para nr@nr.com.br. Para cadastrar nova senha, basta acompanhar o tutorial em anexo.
+
+
+Sendo assim, daremos este chamado por encerrado.
+Permanecemos à inteira disposição.
+								</textarea>
+							</div>
+							<div class="col-1">
+								<div class="row">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+									<a href="../library/pdf/4Cadastro CPF-SENHA.pdf" target="_blank">
+										<img src="../image/download-solid.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download PDF">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Cadastro Perito -->
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+						Cadastro Perito
+					</a>
+				</div>
+				<div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<div class="row">
+							<h5>Sugestão de Resposta:</h5>
+						</div>
+						<div class="row">
+							<div class="col-11">
+								<textarea class="js-copytextarea" rows="15" readonly>
+Boa tarde,
+
+Informamos que, para realização de cadastro de Perito, é necessário que sejam enviados os dados a seguir: 
+
+Documento de Identificação com Foto;
+Comprovante de Residência atualizado;
+Nome Completo;
+E-mail;
+Número do Processo de Designação;
+Especialidade;
+Conselho Profissional;
+Nº de Inscrição;
+
+Permanecemos à inteira disposição.
+								</textarea>
+							</div>
+							<div class="col-1">
+								<a class="js-textareacopybtn">
+									<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+								</a>
+							</div>
+						</div>
+<hr>
+						<div class="row">
+							<h5>Sugestão de Resposta:</h5>					
+						</div>
+						<div class="row">
+							<div class="col-11" data-bs-toggle="tooltip" data-bs-placement="top" title="Resposta após altereções">
+								<textarea class="js-copytextarea" rows="10" readonly>
+Boa tarde,
+
+Informamos que realizamos o cadastro de seu perfil como Perito. Orientamos a tentar realizar acesso ao processo, caso não seja possível, será necessário entrar em contato com a Vara Processante e solicitar sua Habilitação nos Autos do processo.
+
+
+Sendo assim, daremos este chamado por encerrado.
+Permanecemos à inteira disposição.
+								</textarea>
+							</div>
+							<div class="col-1">
+								<div class="row">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon"data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+									<a href="../library/pdf/4Cadastro CPF-SENHA.pdf" target="_blank">
+										<img src="../image/download-solid.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download PDF">
+									</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<!-- Erro para cadastro de Partes Receita Federal-->
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
+						Cadastro de Partes e Peticionamentos (Advogado)
+					</a>
+				</div>
+				<div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<div class="row">
+							<h5>Sugestão de Resposta:</h5>
+						</div>
+						<div class="row" id="txtSmall">
+							<ins>Não foi possível recuperar os dados da Receita Federal</ins>
+						</div>
+						<div class="row">
+							<div class="col-11">
+								<textarea class="js-copytextarea" rows="8" readonly>
+Boa tarde,
+
+Informamos que, o cadastro de Partes e Peticionamentos, só serão possíveis mediante acesso com Certificado Digital. O acesso com CPF permite apenas a realização de consultas processuais, portanto não será possível cadastrar parte e realizar a Recuperação dos dados na Receita Federal.
+
+Sendo assim, daremos este chamado por encerrado.
+Permanecemos à inteira disposição.
+								</textarea>
+							</div>
+							<div class="col-1">
+								<a class="js-textareacopybtn">
+									<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Erro advogado realizando cadastro -->
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSix">
+						Advogado apresenta erro ao se cadastrar
+					</a>
+				</div>
+				<div id="collapseSix" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<div class="row">
+							<h5>Sugestão de Resposta:</h5>
+						</div>
+						<div class="row">
+							<div class="col-11">
+								<textarea class="js-copytextarea" rows="8" readonly>
+Boa tarde,
+
+Informamos que o problema ocorria por falta de um perfil em seu cadastro no PJe. Atribuímos o perfil de Advogado, porquanto, resta apenas acessar com seu Certificado Digital, confirmar os dados cadastrais e assinar o Termo de Compromisso para prosseguir com peticionamentos.
+
+Sendo assim, daremos este chamado por encerrado.
+Permanecemos à inteira disposição.
+								</textarea>
+							</div>
+							<div class="col-1">
+								<a class="js-textareacopybtn">
+									<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Intimação automática MPF-->
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSeven">
+						Gerar notificação Automática PF-MPF [IPL] Tramitação PF - Integração
+					</a>
+				</div>
+				<div id="collapseSeven" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<div class="row">
+							<h5>Sugestão de Resposta:</h5>
+						</div>
+						<div class="row">
+							<div class="col-11">
+								<textarea class="js-copytextarea" rows="8" readonly>
+Boa tarde,
+
+Informamos que a intimação automática para o MPF foi gerada no processo citado.
+
+Sendo assim, daremos este chamado por encerrado.
+Permanecemos à inteira disposição.
+
+								</textarea>
+							</div>
+							<div class="col-1">
+
+								<a class="js-textareacopybtn">
+									<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Colocar o processo em Tramitação Direta PF/MPF -->
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEight">
+						Remeter processo para Tramitação Direta [IPL] Tramitação PF - Integração
+					</a>
+				</div>
+				<div id="collapseEight" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<div class="row">
+							<h5>Sugestão de Resposta:</h5>
+						</div>
+						<div class="row">
+							<div class="col-11">
+								<textarea class="js-copytextarea" rows="9" readonly>
+Boa tarde,
+
+Verificamos que os processos relacionados estavam no fluxo antigo IPL.
+Observe que a tarefa em que o processo se encontrava é "Tramitação PF" e não a do novo fluxo "Tramitação PF - Integração".
+Sendo assim, deverá movimentar os autos utilizando a saída de encaminhamento para apreciação do MPF futuramente, conforme o caso (apreciação ou relatório).
+A partir dessa movimentação, automaticamente os autos serão migrados para o fluxo de integração, conforme os usuários forem efetuando as remessas ao MPF.
+
+Permanecemos à inteira disposição.
+								</textarea>
+							</div>
+							<div class="col-1">
+								<a class="js-textareacopybtn">
+									<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Remeter o processo para análise da Justiça -->
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseNine">
+						Remeter auto para justiça (pedido PF-MPF) - [IPL] Avaliar Solicitações
+
+					</a>
+				</div>
+				<div id="collapseNine" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<div class="row">
+							<h5>Sugestão de Resposta:</h5>
+						</div>
+						<div class="row">
+							<div class="col-11">
+								<textarea class="js-copytextarea" rows="8" readonly>
+Boa tarde,
+
+Informamos que remetemos o processo para apreciação da Justiça Federal e se encontra na tarefa [IPL] Avaliar Solicitações - MPF/PF.
+
+Sendo assim, daremos este chamado por encerrado.
+Permanecemos à inteira disposição.
+
+								</textarea>
+							</div>
+							<div class="col-1">
+								<a class="js-textareacopybtn">
+									<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Visualizar despacho após publicação -->
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTen">
+						Advogado não consegue visualizar despacho
+					</a>
+				</div>
+				<div id="collapseTen" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<div class="row">
+							<h5>Sugestão de Resposta:</h5>
+						</div>
+						<div class="row">
+							<div class="col-11">
+								<textarea class="js-copytextarea" rows="9" readonly>
+Boa tarde,
+
+Informamos que para visualizar o despacho ou documento na linha do tempo, nos autos ou na consulta pública, será possível apenas quando todas as partes tomarem ciência dos últimos despachos juntados. Informamos ainda que poderá visualizar, após dar ciência, pelo Painel do Representante Processual → Expedientes → Procurar o Processo → Visualizar Ato entre os ícones disponíveis ou então pelo DJEN (https://comunica.pje.jus.br).
+
+Sendo assim, daremos este chamado por encerrado.
+Permanecemos à inteira disposição.
+								</textarea>
+							</div>
+							<div class="col-1">
+								<div class="row">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+									<a href="../library/pdf/pasted-image.png" target="_blank">
+										<img src="../image/download-solid.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Download Imagem"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+				
+
+				<!-- Tomar ciência antecipada -->
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEleven">
+							Informação para tomar ciência antecipada de expedientes
+						</a>
+					</div>
+					<div id="collapseEleven" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							<div class="row">
+								<h5>Sugestão de Resposta:</h5>
+							</div>
+							<div class="row">
+								<div class="col-11">
+									<textarea class="js-copytextarea" rows="14" readonly>
+Boa tarde,
+
+O processo aparecerá para o intimado no portal, na ABA EXPEDIENTES no dia que iniciar a contagem do prazo, conforme art. 224 do CPC.
+Desejando antecipar a ciência deverá migrar para a ABA ACERVO, abrir os autos e em expedientes (na faixa azul à direita no menu (3 barras)> expedientes.
+Existe uma lupa (laranja) por onde se pode apor ciência. Atualizando a página o processo migrará para a ABA EXPEDIENTES e iniciará a contagem do prazo processual.
+
+Seguem instruções: 
+Antecipar ciência de intimação pelo Diário Eletrônico
+https://www.trf3.jus.br/documentos/dpje/videos-tutoriais/Ciencia_de_intimacao.mp4
+(copiar e colar o link na barra de endereçamento do Chrome)
+
+Sendo assim, daremos este chamado por encerrado.
+Permanecemos à inteira disposição.
+									</textarea>
+								</div>
+								<div class="col-1">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Habilitação nos Autos -->
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwelve">
+							Processo de Habilitação nos Autos
+						</a>
+					</div>
+					<div id="collapseTwelve" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							<div class="row">
+								<h5>Sugestão de Resposta:</h5>
+							</div>
+							<div class="row">
+								<div class="col-11">
+									<textarea class="js-copytextarea" rows="18" readonly>
+Boa tarde,
+
+Segue procedimento para solicitar habilitação no 1º e no 2º Graus:
+
+1. Na parte superior da tela, canto esquerdo, ao lado de PJe haverá um ícone "menu", Clique;
+2. Siga o caminho PROCESSO → OUTRAS AÇÕES → SOLICITAR HABILITAÇÃO;
+3. Insira o número do feito e clique em pesquisar;
+4. Clique sobre o ícone "Solicitar habilitação nos autos";
+5. Selecione a parte que irá representar - polo ativo ou polo passivo (marcando o quadrado em branco) e clique em Próximo;
+	1º Passo: Escolha do Tipo de Habilitação
+	2º Passo: Confirmar dados do advogado
+	3º Passo: Selecione a parte para vincular
+6. Indique (selecionando o campo correspondente) se juntará o instrumento de mandato ou se protesta pela apresentação oportuna, na forma da lei;
+7. Clique sobre Próximo, inclua o documento de PROCURAÇÃO e SALVE;
+
+Sendo assim, daremos este chamado por encerrado.
+Permanecemos à inteira disposição.
+									</textarea>
+								</div>
+								<div class="col-1">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Mandado de Segurança -->
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThirteen">
+							Procedimento para distribuição de Mandado de Segurança
+						</a>
+					</div>
+					<div id="collapseThirteen" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							<div class="row">
+								<h5>Sugestão de Resposta:</h5>
+							</div>
+							<div class="row">
+								<div class="col-11">
+									<textarea class="js-copytextarea" rows="25" readonly>
+Boa tarde,
+
+Para a distribuição do Mandado de Segurança, no que se refere às PARTES, devem ser seguidos os seguintes passos:
+
+1. Polo ativo: parte impetrante;
+
+2. Polo passivo: parte impetrada (serão duas):
+	2.1 - Autoridade Coatora: tipo de pessoa - clicar em "Ente ou Autoridade" e pesquisar por ela (exemplo: gerente executivo do INSS de tal agência);
+	2.2 - Pessoa Jurídica a quem está vinculada a autoridade coatora: tipo de pessoa - clicar em "Jurídica", órgão público: clicar em SIM e buscar pela pessoa jurídica (exemplo: INSS);
+
+3. Outros Participantes - Fiscal da Lei (tipo de pessoa "Jurídica", órgão público "sim" e pesquisar por Ministério Público Federal – se o caso);
+
+Observação:
+
+Na inclusão do polo passivo, favor escolher a parte - Impetrado. A partir daí escolher, em tipo de pessoa,  ente ou autoridade  e digite a autoridade. ex: gerente executivo do INSS de tal agência.
+
+Para maiores informações veja também:
+
+Como cadastrar um novo processo
+http://www.trf3.jus.br/documentos/dpje/videos-tutoriais/Video_tutorial_para_cadastrar_novo_processo.mp4
+(copiar e colar o link na barra de endereçamento do Chrome)
+
+Permanecemos à inteira disposição.
+									</textarea>
+								</div>
+								<div class="col-1">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Agrado de Instrumento -->
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFourteen">
+							Procedimento para peticionar Agravo de Instrumento
+						</a>
+					</div>
+					<div id="collapseFourteen" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							<div class="row">
+								<h5>Sugestão de Resposta:</h5>
+							</div>
+							<div class="row">
+								<div class="col-11">
+									<textarea class="js-copytextarea" rows="17" readonly>
+Boa tarde,
+
+Segue o roteiro para o peticionamento de Agravo de Instrumento:
+ 
+Para realizar o protocolo de agravo de instrumento, o(a) Sr.(a) deverá entrar no PJe 2º GRAU, no Menu principal do sistema clicar em PROCESSO – NOVO PROCESSO, selecionar a classe referida (202) e inserir o número do processo de referência (principal) e clicar em INCLUIR.
+ 
+Abrir-se-ão as demais abas e o(a) Sr(a). deverá preenchê-las com os dados desejados, realizando o protocolo do processo na aba denominada PROTOCOLAR INICIAL.
+Antes, porém, caso queira confirmar se todos os documentos foram regularmente anexados aos autos, na mesma aba PROTOCOLAR INICIAL, clique na linha DOCUMENTOS (na seta localizada na extrema direita da linha) e, estando tudo conforme desejado, clique no botão protocolar.
+ 
+Será gerado o número do processo e, de imediato, o(a) Sr(a). saberá o relator para o qual foi distribuído o agravo.
+
+ 
+Sendo assim, daremos este chamado por encerrado.
+Permanecemos à inteira disposição.
+									</textarea>
+								</div>
+								<div class="col-1">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Servidor INSS pedindo acesso -->
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFifteen">
+							Solicitação de cadastro para Servidores INSS (Não possuem perfil de Servidor)
+						</a>
+					</div>
+					<div id="collapseFifteen" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							<div class="row">
+								<h5>Sugestão de Resposta:</h5>
+							</div>
+							<div class="row">
+								<ins>Servidor INSS pedindo <em>ACESSO</em> ao PJe</ins>
+							</div>
+							<div class="row">
+								<div class="col-11">
+									<textarea class="js-copytextarea" rows="10" readonly>
+Boa tarde,
+
+Verificamos que não consta um cadastro no Sistema PJe ou não possui um perfil de Servidor atribuído. Entretanto, para que obtenha acesso, será necessário que solicite a outro servidor, que já possua o perfil necessário, realizar um callcenter pedindo o seu cadastro. 
+
+Por favor, solicite a este servidor, que abrirá o callcenter, que indique o perfil requisitado para cadastro.
+
+Sendo assim, daremos este chamado por encerrado.
+Permanecemos à inteira disposição.
+									</textarea>
+								</div>
+								<div class="col-1">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Habilitação em processos em Segredo de Justiça -->
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSixteen">
+							Solicitação de visualização de processos em Segredo de Justiça para INSS
+
+						</a>
+					</div>
+					<div id="collapseSixteen" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							<div class="row">
+								<h5>Sugestão de Resposta:</h5>
+							</div>
+							<div class="row">
+								<div class="col-11">
+									<textarea class="js-copytextarea" rows="10" readonly>
+Boa tarde,
+
+Informamos que a solicitação de habilitação nos autos, nos processos em Segredo de Justiça, deve ser feita diretamente na secretaria processante do feito, com autorização judicial, tal medida não compete ao DPJe.
+
+Isto posto, orientamos que entre em contato com o juízo processante (seja comunicando por telefone, e-mail ou peticionando nos autos) informando esta situação e solicitando a liberação de visualização dos referidos documentos sigilosos (poderá mencionar a resposta enviada a este chamado).
+
+Sendo assim, daremos este chamado por encerrado.
+Permanecemos à inteira disposição.
+									</textarea>
+								</div>
+								<div class="col-1">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Apagar tarefas de processos INSS com Recurso -->
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseSeventeen">
+							Solicitação do INSS para apagar tarefas e remeter ao 2º Grau
+						</a>
+					</div>
+					<div id="collapseSeventeen" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							<div class="row">
+								<h5>Sugestão de Resposta:</h5>
+							</div>
+							<div class="row">
+								<ins>Deve alterar a FILA do chamado para <em>RDAP</em></ins>
+							</div>
+							<div class="row">
+								<small>Procurar pelo processo e verificar as tarefas para alterar (REMETIDOS)</small>
+							</div>
+							<div class="row">
+								<div class="col-11">
+									<textarea class="js-copytextarea" rows="8" readonly>
+Por gentiliza, excluir nós do Processo: 000000000000000 e retornar para AGES → PJe-externos.
+
+[INSS] Preparar informação (Setor administrativo do INSS_São Paulo/Juiz Federal Titular)
+[JEF-PROC] Remetidos para o INSS para cumprimento de decisão (1ª Vara Gabinete JEF de /Juiz Federal Titular)
+Remetidos para o INSS para cumprimento de decisão (1ª Vara Previdenciária Federal de /Juiz Federal Substituto)
+
+​Atenciosamente.
+									</textarea>
+								</div>
+								<div class="col-1">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Processos Bloqueados para Peticionamento -->
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseEighteen">
+							Processos no 1º ou 2º Grau Bloqueados
+						</a>
+					</div>
+					<div id="collapseEighteen" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							<div class="row">
+								<h5>Sugestão de Resposta:</h5>
+							</div>
+							<div class="row">
+								<div class="col-11">
+									<textarea class="js-copytextarea" rows="8" readonly>
+Boa tarde,
+
+Tendo em vista que o feito está tramitando na Turma Recursal atualmente, peticionamentos no 1º Grau ficam bloqueados até a apreciação do Recurso.
+Orientamos que acesse o sistema PJe 2º Grau, para assim efetuar o peticionamento e cumprir o prazo para manifestação.
+
+Sendo assim, daremos este chamado por encerrado.
+Permanecemos à inteira disposição.
+									</textarea>
+								</div>
+								<div class="col-1">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+								</div>
+							</div>
+							<hr>
+							<div class="row">
+								<h5>Sugestão de Resposta:</h5>
+							</div>
+							<div class="row">
+								<div class="col-11">
+									<textarea class="js-copytextarea" rows="8" readonly>
+Boa tarde,
+
+Tendo em vista que o feito está tramitando no 1º Grau atualmente, peticionamentos no 2º Grau ficam bloqueados.
+Orientamos que acesse o sistema PJe 1º Grau, para assim efetuar o peticionamento e cumprir o prazo para manifestação.
+
+Sendo assim, daremos este chamado por encerrado.
+Permanecemos à inteira disposição.
+									</textarea>
+								</div>
+								<div class="col-1">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Não encontrar Classe Judicial -->
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseNineteen">
+							Advogado não encontra Classe Judicial ao cadastrar novo Processo
+						</a>
+					</div>
+					<div id="collapseNineteen" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							<div class="row">
+								<h5>Sugestão de Resposta:</h5>
+							</div>
+							<div class="row">
+								<div class="col-11">
+									<textarea class="js-copytextarea" rows="12" readonly>
+Boa tarde,
+
+Informamos, que a classe judicial e o assunto devem ser definidos de acordo com o Sistema de Gestão de Tabelas Processuais Unificadas - CNJ.
+
+Para maiores informações veja também:
+Como cadastrar um novo processo
+http://www.trf3.jus.br/documentos/dpje/videos-tutoriais/Video_tutorial_para_cadastrar_novo_processo.mp4
+(copiar e colar o link na barra de endereçamento do Chrome)
+
+Desta forma, encerraremos este chamado por fugir ao escopo deste órgão.
+Permanecemos à inteira disposição.
+									</textarea>
+								</div>
+								<div class="col-1">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			<!-- Chamados não relacionados ao PJe Técnico -->
+			<div class="card">
+				<div class="card-header">
+					<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwenty">
+						Chamados em que possuem assuntos não relacionados a parte técnica do PJe
+					</a>
+				</div>
+				<div id="collapseTwenty" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<div class="row">
+							<h5>Sugestão de Resposta:</h5>					
+						</div>
+						<div class="row">
+							<div class="col-11" data-bs-toggle="tooltip" data-bs-placement="top" title="Para PARTES">
+								<textarea class="js-copytextarea" rows="9" readonly>
+Boa tarde,
+
+Informamos que este canal atende exclusivamente a demandas técnicas em relação ao Sistema PJe do Tribunal Regional Federal 3ª Região. Para esclarecimento de dúvidas processuais e relacionadas ao sistema de Atermação orientamos que acesse o balcão virtual - disponível  em: https://www.jfsp.jus.br/balcao-virtual ou diretamente por e-mail ou telefone que podem ser consultados em: https://www.jfsp.jus.br/servicos-judiciais/informacoes-gerais ( no caso de São Paulo) ou https://www.jfms.jus.br/telefones (no caso de Mato Grosso do Sul).
+
+Sendo assim, daremos este chamado por encerrado.
+Permanecemos à inteira disposição.
+								</textarea>
+							</div>
+							<div class="col-1">
+								<a class="js-textareacopybtn">
+									<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+								</a>
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<h5>Sugestão de Resposta:</h5>					
+						</div>
+						<div class="row">
+							<div class="col-11" data-bs-toggle="tooltip" data-bs-placement="top" title="ADVOGADOS">
+								<textarea class="js-copytextarea" rows="8" readonly>
+Boa Tarde, 
+
+Quanto a sua solicitação, esclarecemos que compete ao DPJe, as tratativas quanto ao processo eletrônico em sua acepção estritamente técnica, portanto, questões jurídicas não serão abordadas no presente chamado.
+Logo, solicitamos que o senhor entre em contato com o órgão julgador, para assim enviar as devidas questões. 
+
+Desta forma, encerraremos este chamado por fugir ao escopo deste órgão.
+Permanecemos à inteira disposição.
+								</textarea>
+							</div>
+							<div class="col-1">
+								<a class="js-textareacopybtn">
+									<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+<!-- Notificação PUSH -->
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwnetyone">
+							Notificação PUSH
+						</a>
+					</div>
+					<div id="collapseTwnetyone" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							<div class="row">
+								<h5>Sugestão de Resposta:</h5>
+							</div>
+							<div class="row">
+								<div class="col-11">
+									<textarea class="js-copytextarea" rows="16" readonly>
+Boa tarde,
+
+Caso esteja se referindo ao Push, pedimos que verifique se o processo está cadastrado no Push conforme orientações a seguir:
+
+Após acessar o sistema PJe, clique no menu "Processo" → "Outras ações" → "Incluir no push";
+ 
+Esclarecemos, por oportuno, que este suporte é somente relativo ao PJe e, de acordo com o sistema em que está inserido o processo (autos físicos/ PJe / JEF), o(a)  Sr(a). deverá buscar o cadastro do PUSH respectivo.
+
+Caso esteja incluído no Push, informamos que o e-mail é enviado apenas quando houver movimentação no processo.
+
+Caso verifique que houve movimentação e não recebeu e-mail, pedimos que nos encaminhe o print onde consta a inclusão do processo no Push e o último e-mail recebido desse processo.
+
+Pedimos também que verifique se o e-mail não está na lixeira ou no spam do e-mail.
+
+Permanecemos à inteira disposição.
+								</textarea>
+								</div>
+								<div class="col-1">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+<!-- Instrução para parte sem advogado peticionar -->
+				<div class="card">
+					<div class="card-header">
+						<a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwnetytwo">
+							Peticionamento de Parte sem Advogado no SAO
+						</a>
+					</div>
+					<div id="collapseTwnetytwo" class="collapse" data-bs-parent="#accordion">
+						<div class="card-body">
+							<div class="row">
+								<h5>Sugestão de Resposta:</h5>
+							</div>
+							<div class="row">
+								<div class="col-11">
+									<textarea class="js-copytextarea" rows="17" readonly>
+Boa tarde,
+
+Para peticionar no processo, a parte sem advogado consegue efetuar o
+peticionamento através do sistema JEF – SAO Serviço de Atermação Online.
+ 
+Segue link da atermação em [1]https://web3.trf3.jus.br/peticoesjef/Atermacoes/
+conforme consta nas orientações do site [2]https://www.trf3.jus.br/pje/jef
+ 
+Segue link para cadastramento de usuário no SAO:
+[3]https://web3.trf3.jus.br/peticoesjef/Atermacoes/Usuario/Incluir
+ 
+Segue link para acesso ao manual com orientações sobre o SAO:
+[4]https://www.trf3.jus.br/documentos/ages/Arquivos/Manual_8796423_Manual_SAO_e_manifestacao_de_terceiros_em_pdf.pdf
+ 
+Permanecemos à inteira disposição.
+
+								</textarea>
+								</div>
+								<div class="col-1">
+									<a class="js-textareacopybtn">
+										<img src="../image/content-copy.svg" class="copyIcon" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Copiar">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+	</div>
+
+
+
+
+		<!-- Default Script-->
+		<script type="text/javascript" src="../js/script.js"></script>
+		<footer class="footerOne"> Designed by Thiago de Camargo Amaro</footer>
+
+	</body>
+	</html>
