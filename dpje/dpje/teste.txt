@@ -1,0 +1,112 @@
+Boa tarde,
+
+Orientamos primeiramente, a desinstalar a versão do PJe-Office que está atualmente em seu computador, sendo este imprescindível para acessar posteriormente e após acesse o link https://www.pje.jus.br/wiki/index.php/PJeOffice, faça o download da versão atual do PJeOffice disponível para seu Sistema Operacional, instale o aplicativo sem criar um ícone na área de trabalho e siga os passos abaixo para realizar a configuração de seu Certificado Digital junto ao PJeOffice.
+
+Em anexo estamos enviando tutorias para atualizar a versão do PJeOffice, entrar com a senha de seu Certificado quando exibir "Chave inválida" ou "Parâmetros Incorretos" e verificar as configurações do Certificado Digital, caso tenha sido renovado.
+
+Após instalação, procure o software PJeOffice no Menu Iniciar e dê um duplo clique sobre ele, deve aparecer a mensagem “já existe uma instância do PJe-Office em execução", este procedimento fará com que o ícone na barra de tarefas apareça e você consiga continuar com os procedimentos para adicionar o Certificado Digital, não necessitando fechar a caixa de diálogo para continuar.
+
+Permanecemos à inteira disposição.
+
+
+Caso o problema persista, nos forneça mais informações (print do erro apresentado) e número do processo, se houver, para que possamos auxiliar melhor e dar prosseguimento no atendimento.
+
+
+Após, orientamos a seguir o caminho, Painel > Acesso Rápido > Assinar Documentos Pendentes. Lá você irá encontrar quais documentos ainda necessitam de assinatura.
+
+Informamos que o Callcenter TRF 3ª presta auxílio técnico exclusivamente por meio deste canal eletrônico, não possuindo a opção via atendimento telefônico.
+
+Informamos que o cadastro de advogado é um processo que deve ser feito pelo próprio advogado. Basta acessar https://pje1g.trf3.jus.br/pje/login.seam, clicar em "Formas de Acesso", em seguida acompanhar os passos para cadastro com Certificado Digital, devendo ser do TIPO A3 e assim assinar o Termo de Compromisso.
+
+Lembramos que, as plataformas de acompanhamento e peticionamento online dos Tribunais atuam de forma independente, porquanto, o acesso a um deles não garante o acesso aos demais, sendo necessário verificar os requisitos de acesso para cada um.
+
+Pedimos que verifique no PJe-Office, nos ícones ocultos na parte inferior direita de sua tela. Ao encontrar, clique com o botão direito e vá para "Servidores Autorizados", na lista deverá ter o link do https://pje1g.trf3.jus.br/ e https://pje2g.trf3.jus.br/, verifique se a opção "SIM" está marcada, caso não esteja, realize esta mudança e tente novamente o acesso ao sistema.
+
+
+CONJUNTO DE CHAVES NÃO EXISTE
+Boa tarde,
+
+Informamos que este erro é gerado quando o aplicativo do PJe-Office não reconhece a senha de seu Certificado Digital, para resolver, basta acessar o aplicativo e configurar a senha como consta no Tutorial em anexo.
+
+Sendo assim, daremos este chamado por encerrado.
+Permanecemos à inteira disposição.
+
+CKR_DEVICE_ERROR
+
+
+UNSUPPORTED KEY TYPE NULL
+Boa tarde,
+
+Solicitamos que siga os passos abaixo para sanar o problema informado:
+
+1.Retire o token da porta USB do computador.
+2.Acesse o painel de controle do computador.
+3. No painel de controle, acesse as opções de Internet.
+4. Selecione a aba “Conteúdo” e logo após “Certificados”
+5. Clique no (s) certificado (s) e selecione remover.
+6. Após o procedimento, realize o acesso ao sistema que o problema estará
+sanado.
+
+Permanecemos à inteira disposição.
+
+
+FETCH TO SOURCE
+Boa tarde,
+
+Informamos que este erro está relacionado com sua conexão de internet e é gerado quando o navegador utilizado não permite a conexão para acesso do PJe, será necessário verifique as configurações de conexão do navegador, do Firewall do Windows e do Antivírus utilizado. O PJeOffice utiliza a porta 8800 para receber dados do PJe (web), portanto deverá verificar se esta porta está tendo o acesso bloqueado por alguma das opções mencionadas.
+
+Permanecemos à inteira disposição.
+
+
+Boa tarde,
+
+Para a distribuição do Mandado de Segurança, no que se refere às PARTES, devem ser seguidos os seguintes passos:
+
+1 - Polo ativo: parte impetrante;
+
+2 - Polo passivo: parte impetrada (serão duas):
+	2.1 - Autoridade Coatora: tipo de pessoa - clicar em "Ente ou Autoridade" e pesquisar por ela (exemplo: gerente executivo do INSS de tal agência);
+	2.2 - Pessoa Jurídica a quem está vinculada a autoridade coatora: tipo de pessoa - clicar em "Jurídica", órgão público: clicar em SIM e buscar pela pessoa jurídica (exemplo: INSS);
+
+3 - Outros Participantes - Fiscal da Lei (tipo de pessoa "Jurídica", órgão público "sim" e pesquisar por Ministério Público Federal – se o caso);
+
+Observação:
+
+Na inclusão do polo passivo, favor escolher a parte - Impetrado. A partir daí escolher, em tipo de pessoa,  ente ou autoridade  e digite a autoridade. ex: gerente executivo do INSS de tal agência.
+
+Para maiores informações veja também:
+
+Como cadastrar um novo processo
+http://www.trf3.jus.br/documentos/dpje/videos-tutoriais/Video_tutorial_para_cadastrar_novo_processo.mp4
+(copiar e colar o link na barra de endereçamento do Chrome)
+
+Permanecemos à inteira disposição.
+
+
+
+
+
+
+
+<!--<div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active" data-bs-interval="30000">
+									<img src="../image/tutorial/pf-info.png" class="d-block">
+								</div>
+								<div class="carousel-item" data-bs-interval="30000">
+									<img src="../image/tutorial/pf-cadastro.png" class="d-block">
+								</div>
+								<div class="carousel-item" data-bs-interval="30000">
+									<img src="..." class="d-block">
+								</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="visually-hidden">Next</span>
+							</button>
+						</div>-->
+						<!-- Texto Informação-->

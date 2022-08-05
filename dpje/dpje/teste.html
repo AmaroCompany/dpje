@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  window.onload = function() {
+    // Pega todos os elementos correspondentes
+    var copyTextareaBtn = Array.prototype.slice.
+      call(document.querySelectorAll('.js-textareacopybtn'));
+    var copyTextarea = Array.prototype.slice.
+      call(document.querySelectorAll('.js-copytextarea'));
+ 
+    // Laço para percorrer todos os elementos
+    copyTextareaBtn.forEach(function(btn, idx) {
+ 
+      btn.addEventListener("click", function() {
+ 
+        // Copia o conteudo do textarea
+        copyTextarea[idx].select();
+ 
+          var msg = document.execCommand('copy') 
+            ? 'funcionou' : 'deu erro';
+          console.log('Compando para copiar texto ' + msg);
+ 
+      });
+ 
+    });
+  }
+</script>
+ 
+ 
+ 
+ 
+  <div>
+    <p>Teste #1
+      <textarea class="js-copytextarea">Texto para copiar #1</textarea>
+      <button class="js-textareacopybtn">Copiar</button>
+    </p>
+ 
+    <p>Teste #2:
+      <textarea class="js-copytextarea">Texto para copiar #2</textarea>
+      <button class="js-textareacopybtn">Copiar</button>
+    </p>
+  </div>
+  
+</body>
+</html>
+-->
